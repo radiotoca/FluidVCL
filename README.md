@@ -30,6 +30,7 @@ FluidVCL is developed and maintained for free. If these components save you time
 
 You can support the project here:
 [https://buymeacoffee.com/ignuicould](https://buymeacoffee.com/ignuicould)
+![FluidVCL Components Showcase](./img/support.jpg)
 
 ---
 
