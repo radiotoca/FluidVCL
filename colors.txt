@@ -1,0 +1,30 @@
+color: $002F3131
+
+color: $002F3131
+scolr: $00505154
+bordr: $005B5C5D
+shovr: $005B5C5D
+
+#FF00FF
+
+procedure TMainForm.btnSelectColorClick(Sender: TObject);
+var
+  Dlg: TFluidColorPickerDialog;
+begin
+  // 1. Create the dialog instance
+  Dlg := TFluidColorPickerDialog.Create(Self);
+  try
+    // 2. Set the 'Old' color property before showing it
+    // This triggers the shpOldColor.Brush.Color assignment in FormShow
+    Dlg.OriginalColor := Self.Color; 
+
+    // 3. Show the dialog
+    if Dlg.ShowModal = mrOk then
+    begin
+      // 4. If user clicked OK, apply the new color
+      Self.Color := Dlg.ColorBox.SelectedColor;
+    end;
+  finally
+    Dlg.Free;
+  end;
+end;

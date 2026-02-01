@@ -1,0 +1,49 @@
+package FluidVCL;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS ON}
+{$RANGECHECKS ON}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  RoundedPanel in 'RoundedPanel.pas',
+  RoundedSpeedButton in 'RoundedSpeedButton.pas',
+  MenuPanelUnit in 'MenuPanelUnit.pas',
+  GroupablePanelUnit in 'GroupablePanelUnit.pas',
+  FluidRangeUnit in 'FluidRangeUnit.pas',
+  FluidColorBoxUnit in 'FluidColorBoxUnit.pas',
+  RoundedEditUnit in 'RoundedEditUnit.pas',
+  RoundedMemoUnit in 'RoundedMemoUnit.pas',
+  RoundedButtonUnit in 'RoundedButtonUnit.pas',
+  RoundedGroupBoxUnit in 'RoundedGroupBoxUnit.pas',
+  RoundedComboBox in 'RoundedComboBox.pas',
+  FluidEditUnit in 'FluidEditUnit.pas';
+
+end.
