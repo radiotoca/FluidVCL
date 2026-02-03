@@ -373,12 +373,12 @@ begin
     else
       ControlColor := FNormalColor;
 
-    Offset := (FBorderWidth / 2) + 0.5;
+      Offset := (FBorderWidth / 2) + 0.5;
 
     R.X := Offset;
     R.Y := Offset;
-    R.Width := ClientWidth - (Offset * 2);
-    R.Height := ClientHeight - (Offset * 2);
+    R.Width := ClientWidth - (Offset * 2) - 1;
+    R.Height := ClientHeight - (Offset * 2) - 1;
 
     Radius := FBorderRadius;
     if Radius > R.Width / 2 then Radius := R.Width / 2;
