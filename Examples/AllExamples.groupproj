@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2E7E1DCF-A073-497D-9049-A9B2BB096C9A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ColorPicker\FluidColorPicker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GroupPanels\GroupPanels.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RangeBar\RangeBar.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RoundedEdit\RoundedEdit.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PhotoEditor\PhotoEditor.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FluidColorPicker">
+        <MSBuild Projects="ColorPicker\FluidColorPicker.dproj"/>
+    </Target>
+    <Target Name="FluidColorPicker:Clean">
+        <MSBuild Projects="ColorPicker\FluidColorPicker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FluidColorPicker:Make">
+        <MSBuild Projects="ColorPicker\FluidColorPicker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GroupPanels">
+        <MSBuild Projects="GroupPanels\GroupPanels.dproj"/>
+    </Target>
+    <Target Name="GroupPanels:Clean">
+        <MSBuild Projects="GroupPanels\GroupPanels.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GroupPanels:Make">
+        <MSBuild Projects="GroupPanels\GroupPanels.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RangeBar">
+        <MSBuild Projects="RangeBar\RangeBar.dproj"/>
+    </Target>
+    <Target Name="RangeBar:Clean">
+        <MSBuild Projects="RangeBar\RangeBar.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RangeBar:Make">
+        <MSBuild Projects="RangeBar\RangeBar.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RoundedEdit">
+        <MSBuild Projects="RoundedEdit\RoundedEdit.dproj"/>
+    </Target>
+    <Target Name="RoundedEdit:Clean">
+        <MSBuild Projects="RoundedEdit\RoundedEdit.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RoundedEdit:Make">
+        <MSBuild Projects="RoundedEdit\RoundedEdit.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PhotoEditor">
+        <MSBuild Projects="PhotoEditor\PhotoEditor.dproj"/>
+    </Target>
+    <Target Name="PhotoEditor:Clean">
+        <MSBuild Projects="PhotoEditor\PhotoEditor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PhotoEditor:Make">
+        <MSBuild Projects="PhotoEditor\PhotoEditor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FluidColorPicker;GroupPanels;RangeBar;RoundedEdit;PhotoEditor"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FluidColorPicker:Clean;GroupPanels:Clean;RangeBar:Clean;RoundedEdit:Clean;PhotoEditor:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FluidColorPicker:Make;GroupPanels:Make;RangeBar:Make;RoundedEdit:Make;PhotoEditor:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
